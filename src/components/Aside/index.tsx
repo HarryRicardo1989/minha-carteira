@@ -5,8 +5,9 @@ import logoImg from '../../assets/logo.svg'
 
 import {
     Container,
-    Header,
     LogImg,
+    Header,
+    Title,
     MenuContainer,
     MenuItemLink,
 
@@ -17,6 +18,7 @@ const Aside: React.FC = () => {
         <Container>
             <Header>
                 <LogImg src={logoImg} alt="Logo Minha Carteira" />
+                <Title>Minha Carteira</Title>
             </Header>
             <MenuContainer>
                 <MenuItemLink href="#">
