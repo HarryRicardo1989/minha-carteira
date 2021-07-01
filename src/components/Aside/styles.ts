@@ -39,11 +39,17 @@ export const MenuItemLink = styled.a`
     color: ${props => props.theme.colors.info};
     text-decoration:none;
     margin: 7px 0;
-
+    display: flex;
+    align-items: center;
     transition: opacity .5s;
 
     :hover{
         opacity: .7;
+    }
+
+    > svg {
+        font-size: 20px;
+        margin-right: 5px;
     }
 
 `;
