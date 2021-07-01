@@ -10,7 +10,7 @@ border-right: 1px solid ${props => props.theme.colors.gray};
 
 `
 export const Header = styled.header `
-    
+    height: 70px;
     display: flex;
     align-items: center;
 
@@ -28,12 +28,25 @@ export const Title = styled.h3`
 
 `;
 export const MenuContainer = styled.nav `
-
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
 
 
 `;
 export const MenuItemLink = styled.a`
 
+    color: ${props => props.theme.colors.info};
+    text-decoration:none;
+    margin: 7px 0;
 
+    transition: opacity .5s;
+
+    :hover{
+        opacity: .7;
+    }
 
 `;
+
+
+
