@@ -3,6 +3,11 @@ import { Container, TitleContainer, Controllers } from './styles'
 import Selectinput from "../SelectImput";
 
 const ContentHeader: React.FC = () => {
+    const options = [
+        {value:"Ricardo",label:"Ricardo"},
+        {value:"Maria",label:"Maria"},
+        {value:"Rodrigo",label:"Rodrigo"},
+    ]
     return (
         <Container>
             <TitleContainer>
@@ -11,9 +16,9 @@ const ContentHeader: React.FC = () => {
                 </h1>
             </TitleContainer>
             <Controllers>
-                <Selectinput />
-                <Selectinput />
-                <Selectinput />
+                <Selectinput options={options}/>
+                <Selectinput options={options}/>
+                <Selectinput options={options}/>
             </Controllers>
 
 

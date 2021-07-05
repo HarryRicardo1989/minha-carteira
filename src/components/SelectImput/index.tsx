@@ -1,17 +1,24 @@
 import React from "react";
-
 import { Container } from './styles'
 
-const Selectinput: React.FC = () => {
+interface ISelectImputProps {
+    options:{
+        value: string | number [];
+        label: string | number [];
+
+    }[],
+}
+
+const Selectinput: React.FC <ISelectImputProps> = (options => { 
     return (
         <Container>
-            <select>
-                <option value="Ana">Ana</option>
-                <option value="Marcos">Marcos</option>
-                <option value="Maria">Maria</option>
+            <select>{
+                options.map( item =>((<option value={item.value}>{item.label}</option>)))
+                }
             </select>
         </Container>
-    );
-}
+    )
+})
+
 
 export default Selectinput;
